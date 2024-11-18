@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+   <group ns="wx250s">
+    	<node pkg="cooperation_widowx_turtlebot3" name="pick_place" type="pick_place.py"/>
+  </group>
+   <node pkg="cooperation_widowx_turtlebot3" name="navigation" type="navigation.py"/>
+   <node pkg="cooperation_widowx_turtlebot3" name="attach" type="attach.py"/>  
+   
+</launch>
+

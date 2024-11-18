@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="model" default="waffle_pi" doc="Modelo do TurtleBot3 (burger, waffle, waffle_pi)"/>
+  <arg name="x_pos" default="2.0" />
+  <arg name="y_pos" default="0.0" />
+  <arg name="z_pos" default="0.0" />
+
+  <include file="$(find cooperation_widowx_turtlebot3)/launch/xsarm_moveit.launch" />
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_turtlebot3" args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+
+</launch>
+

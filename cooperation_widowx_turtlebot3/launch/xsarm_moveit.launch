@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <env name="GAZEBO_MODEL_PATH" value="/home/aline/catkin_ws/src/cooperation_widowx_turtlebot3/models" />
+
+  <include file="$(find interbotix_xsarm_moveit)/launch/xsarm_moveit.launch">
+    <arg name="robot_model" value="wx250s"/>
+    <arg name="use_gazebo" value="true"/>
+    <arg name="dof" value="6"/>
+    <arg name="world_name" value="$(find cooperation_widowx_turtlebot3)/worlds/novo_mundo.world"/>
+  </include>
+
+  <node pkg="rosservice" type="rosservice" name="unpause_gazebo" args="call --wait /gazebo/unpause_physics" />
+  
+</launch>
+
+
+
