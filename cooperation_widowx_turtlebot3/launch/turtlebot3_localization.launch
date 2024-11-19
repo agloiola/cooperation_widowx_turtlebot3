@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="map_file" default="$(find cooperation_widowx_turtlebot3)/maps/mapa.yaml"/>
+  <arg name="model" default="waffle_pi"/>
+  
+  
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  
+  <!-- Publica a Posição Inicial -->
+  <node pkg="rostopic" type="rostopic" name="set_initial_pose" 
+        args="pub /initialpose geometry_msgs/PoseWithCovarianceStamped '{header: {frame_id: 'map'}, pose: {pose: {position: {x: 2.0, y: 0.0, z: 0.0}, orientation: {z: 0.0, w: 1.0}}, covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1]}}' -1" />
+        
+        
+</launch>
+

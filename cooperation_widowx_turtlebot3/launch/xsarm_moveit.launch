@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <launch>
 
-  <env name="GAZEBO_MODEL_PATH" value="/home/aline/catkin_ws/src/cooperation_widowx_turtlebot3/models" />
+  <env name="GAZEBO_MODEL_PATH" value="$(find cooperation_widowx_turtlebot3)/models" />
+
 
   <include file="$(find interbotix_xsarm_moveit)/launch/xsarm_moveit.launch">
     <arg name="robot_model" value="wx250s"/>
