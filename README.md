@@ -28,6 +28,7 @@ Antes de começar, certifique-se de que você tenha o seguinte instalado e confi
 Siga estas etapas para configurar o ambiente de simulação:
 
 1. Clone o repositório do braço robotico para o seu workspace ROS:
+   
     Faça o download dos pacotes fornecidos pelo fabricante do braço robótico WidowX-250s.
    ```bash
    cd ~/catkin_ws/src && git clone https://github.com/Interbotix/interbotix_ros_manipulators.git
@@ -41,7 +42,9 @@ Siga estas etapas para configurar o ambiente de simulação:
    source devel/setup.bash 
 
 2. Clone o repositório do Turtlebot3 para o seu workspace ROS:
+
     Faça o download dos pacotes fornecidos pelo fabricante do Turtlebot3.
+   
    ```bash
    cd ~/catkin_ws/src
    git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
@@ -50,5 +53,14 @@ Siga estas etapas para configurar o ambiente de simulação:
    catkin_make
    source devel/setup.bash
 
-4. Clone o repositório de cooperação para o seu workspace ROS:
+3. Clone o repositório de cooperação para o seu workspace ROS:
+   
     Por fim, instale este repositório, que contém os arquivos necessários para a cooperação.
+
+   ```bash
+   cd ~/catkin_ws/src
+   https://github.com/agloiola/cooperation_widowx_turtlebot3.git
+   cd ~/catkin_ws
+   catkin_make
+   source devel/setup.bash
+   
