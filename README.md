@@ -27,7 +27,7 @@ Antes de começar, certifique-se de que você tenha o seguinte instalado e confi
 ## Instalação
 Siga estas etapas para configurar o ambiente de simulação:
 
-1. Clone o repositório do braço robotico para o seu workspace ROS:
+1. Clone o repositório do braço robótico para o seu workspace ROS:
    
     Faça o download dos pacotes fornecidos pelo fabricante do braço robótico WidowX-250s.
    ```bash
@@ -55,18 +55,18 @@ Siga estas etapas para configurar o ambiente de simulação:
 
 3. Clone o repositório de cooperação para o seu workspace ROS:
    
-    Por fim, instale este repositório, que contém os arquivos necessários para a cooperação.
+    Por fim, instale este repositório, que contém os arquivos necessários para a cooperação entre o WidowX-250s e o Turtlebot3:
 
    ```bash
    cd ~/catkin_ws/src
-   https://github.com/agloiola/cooperation_widowx_turtlebot3.git
+   git clone https://github.com/agloiola/cooperation_widowx_turtlebot3.git
    cd ~/catkin_ws
    catkin_make
    source devel/setup.bash
 
 ## Execução
 
-Siga os passos abaixo para executar a simulação de cooperação entre o **WidowX-250s** e o **Turtlebot3**:
+Siga os passos abaixo para executar a simulação de cooperação entre o WidowX-250s e o Turtlebot3:
 
 1. Inicie o ambiente de simulação:
    
@@ -89,4 +89,5 @@ Este comando inicializa o mapa do ambiente de simulação para a navegação do 
    Abra um novo terminal e execute o comando:
    ```bash
    roslaunch cooperation_widowx_turtlebot3 cooperation.launch
-   Este comando inicia o script de cooperação, fazendo com que o robô móvel se desloque até a posição próxima ao braço robótico. Assim que o robô chegar a essa posição, o braço robótico executará a ação de pegar e mover o objeto de uma mesa para o robô móvel, que, por fim, transportará o objeto para outra posição.
+   
+   Este comando inicia o script de cooperação, fazendo com que o Turtlebot3 se desloque até a posição próxima ao braço robótico. Assim que o robô chegar a essa posição, o braço robótico executará a ação de pegar e mover o objeto de uma mesa para o robô móvel, que, por fim, transportará o objeto para outra posição.
