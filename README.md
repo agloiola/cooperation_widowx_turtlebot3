@@ -5,10 +5,10 @@ Este repositório apresenta um tutorial para a simulação de uma colaboração 
 ## Objetivo
 
 O objetivo deste projeto é criar uma simulação onde:  
-1. O Turtlebot3 se move até uma posição predefinida.  
-2. O WidowX-250s transfere um objeto de uma mesa para o Turtlebot3.  
+1. O Turtlebot3 se move até uma posição próxima ao braço robótico WidowX-250s.
+2. O WidowX-250s pega um objeto de uma mesa e o transfere para o Turtlebot3. 
 3. Após receber o objeto, o Turtlebot3 se desloca para outra posição, transportando o objeto.
-
+   
 ## Índice
 - [Pré-requisitos](#pré-requisitos)  
 - [Instalação](#instalação)  
@@ -73,6 +73,7 @@ Siga os passos abaixo para executar a simulação de cooperação entre o WidowX
    Abra um terminal e execute o comando a seguir para iniciar o ambiente de simulação:
    ```bash
    roslaunch cooperation_widowx_turtlebot3 wx250s_turtlebot3.launch
+   
 
    Este comando inicializa o ambiente de simulação no Gazebo, contendo o braço robótico e o robô móvel, além do RViz e do MoveIt!, que são utilizados para planejar e executar os movimentos do braço robótico.
 
@@ -89,5 +90,6 @@ Este comando inicializa o mapa do ambiente de simulação para a navegação do 
    Abra um novo terminal e execute o comando:
    ```bash
    roslaunch cooperation_widowx_turtlebot3 cooperation.launch
+   
    
    Este comando inicia o script de cooperação, fazendo com que o Turtlebot3 se desloque até a posição próxima ao braço robótico. Assim que o robô chegar a essa posição, o braço robótico executará a ação de pegar e mover o objeto de uma mesa para o robô móvel, que, por fim, transportará o objeto para outra posição.
