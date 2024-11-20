@@ -81,15 +81,16 @@ Siga os passos abaixo para executar a simulação de cooperação entre o WidowX
    
    Abra um terminal e execute o comando a seguir para iniciar o mapa do ambiente de simulação:
    ```bash
-   roslaunch cooperation_widowx_turtlebot3 turtlebot3_localization.launch 
+   roslaunch cooperation_widowx_turtlebot3 turtlebot3_localization.launch
+   
 
-Este comando inicializa o mapa do ambiente de simulação para a navegação do Turtlebot3.
+   Este comando inicializa o mapa do ambiente de simulação para a navegação do Turtlebot3.
 
 3. Execute o launch de cooperação:
    
    Abra um novo terminal e execute o comando:
    ```bash
    roslaunch cooperation_widowx_turtlebot3 cooperation.launch
-   
+
    
    Este comando inicia o script de cooperação, fazendo com que o Turtlebot3 se desloque até a posição próxima ao braço robótico. Assim que o robô chegar a essa posição, o braço robótico executará a ação de pegar e mover o objeto de uma mesa para o robô móvel, que, por fim, transportará o objeto para outra posição.
