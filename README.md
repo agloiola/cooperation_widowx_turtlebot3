@@ -89,7 +89,7 @@ Este comando inicializa o ambiente de simulação no Gazebo, contendo o braço r
 
 2. Inicie o mapa do ambiente de simulação:
    
-   Abra um terminal e execute o comando a seguir para iniciar o mapa do ambiente de simulação:
+   Abra um novo um terminal e execute o comando a seguir para iniciar o mapa do ambiente de simulação:
    ```bash
    roslaunch cooperation_widowx_turtlebot3 turtlebot3_localization.launch
 
@@ -97,7 +97,7 @@ Este comando inicializa o mapa do ambiente de simulação para a navegação do 
 
 3. Execute o launch de cooperação:
    
-   Abra um novo terminal e execute o comando:
+   Abra um novo terminal e execute o seguinte comando para iniciar a cooperação entre o robô móvel e o braço robótico:
    ```bash
    roslaunch cooperation_widowx_turtlebot3 cooperation.launch
 
