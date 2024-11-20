@@ -9,6 +9,15 @@ O objetivo deste projeto é criar uma simulação onde:
 2. O WidowX-250s pega um objeto de uma mesa e o transfere para o Turtlebot3. 
 3. Após receber o objeto, o Turtlebot3 se desloca para outra posição, transportando o objeto.
    
+- Demonstração da simulação de cooperação entre o braço robótico e o robô móvel no Gazebo:
+
+  ![Demonstração da simulação de cooperação](cooperation_widowx_turtlebot3/images/cooperacao.gif)
+
+- Demonstração da simulação de navegação do Turtlebot3 no mapa através do RViz:
+
+  ![Demonstração da simulação de navegação](cooperation_widowx_turtlebot3/images/robo_movel.gif)
+
+
 ## Índice
 - [Pré-requisitos](#pré-requisitos)  
 - [Instalação](#instalação)  
