@@ -1,6 +1,6 @@
-# Colaboração entre WidowX-250s e Turtlebot3 com ROS
+# Cooperação entre WidowX-250s e Turtlebot3 com ROS
 
-Este repositório apresenta um tutorial para a simulação de uma colaboração simples entre o braço robótico **WidowX-250s** e o **Turtlebot3 Waffle Pi**, utilizando o **ROS (Robot Operating System)**.  
+Este repositório apresenta um tutorial para a simulação de uma cooperação simples entre o braço robótico **WidowX-250s** e o **Turtlebot3 Waffle Pi**, utilizando o **ROS (Robot Operating System)**.  
 
 ## Objetivos
 
