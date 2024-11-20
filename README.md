@@ -2,7 +2,7 @@
 
 Este repositório apresenta um tutorial para a simulação de uma colaboração simples entre o braço robótico **WidowX-250s** e o **Turtlebot3 Waffle Pi**, utilizando o **ROS (Robot Operating System)**.  
 
-## Objetivo
+## Objetivos
 
 O objetivo deste projeto é criar uma simulação onde:  
 1. O Turtlebot3 se move até uma posição próxima ao braço robótico WidowX-250s.
@@ -19,6 +19,8 @@ O objetivo deste projeto é criar uma simulação onde:
 
 
 ## Índice
+- [Objetivos](#objetivos)  
+- [Execução](#execução)
 - [Pré-requisitos](#pré-requisitos)  
 - [Instalação](#instalação)  
 - [Execução](#execução)
